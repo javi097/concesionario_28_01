@@ -15,7 +15,7 @@ class CreateCochesTable extends Migration
     {
         Schema::create('coches', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('matriculas',8)->unique();
+            $table->string('matricula',8)->unique();
             $table->string('modelo');
             $table->string('color')->default('blanco');
             $table->string('tipo')->default('Gasolina');
